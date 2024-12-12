@@ -1,5 +1,5 @@
 taipy
 dotenv
 crewai
-crewai[tools]
+crewai-tools
 
