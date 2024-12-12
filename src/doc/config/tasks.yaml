@@ -1,0 +1,14 @@
+tarefa_pesquisa:
+  description: "Realizar uma pesquisa para identificar as principais causas que podem colocar as empresas em dificuldades no setor {topic}, considerando fatores econômicos, sociais e tecnológicos em 2024."
+  expected_output: "Uma lista de 10 causas principais que podem levar empresas do setor {topic} a enfrentar dificuldades, com uma breve explicação de cada uma."
+  agent: pesquisador
+
+tarefa_relatorio:
+  description: "Propor soluções para as causas identificadas na pesquisa. O relatório deve abordar estratégias para mitigar ou resolver cada uma das causas, com base em dados e melhores práticas."
+  expected_output: "Relatório completo em formato markdown, com soluções detalhadas para cada uma das causas identificadas na pesquisa."
+  agent: analista_de_relatorios
+
+tarefa_plano_recuperacao:
+  description: "Elaborar um plano de recuperação detalhado, com base nas soluções propostas, para estabilizar e impulsionar o crescimento das empresas no setor {topic}. Incluir as ações necessárias para implementar as soluções discutidas."
+  expected_output: "Plano de recuperação com as seções: Introdução, Diagnóstico das Causas, Soluções Propostas, Ações Recomendadas, Indicadores de Sucesso. Formatar como markdown."
+  agent: planejador_de_recuperacao

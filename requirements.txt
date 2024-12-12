@@ -1,0 +1,5 @@
+taipy
+dotenv
+crewai
+crewai[tools]
+
