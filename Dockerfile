@@ -1,13 +1,18 @@
 # Usar uma imagem base do Python
 FROM python:3.12-slim
 
+# Instalar pacotes do sistema operacional necessários
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libssl-dev \
+    libffi-dev \
+    && rm -rf /var/lib/apt/lists/*
+
 # Definir o diretório de trabalho no container
 WORKDIR /app
 
-# Copiar o arquivo de requirements.txt para o container
+# Copiar os arquivos do projeto para o container
 COPY requirements.txt requirements.txt
-
-# Copiar todo o diretório src/doc para o diretório de trabalho no container
 COPY src/doc /app/src/doc
 
 # Instalar as dependências do projeto
