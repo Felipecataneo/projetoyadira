@@ -1,11 +1,12 @@
 # Usar uma imagem base do Python
-FROM python:3.12-slim
+FROM python:3.12
 
 # Instalar pacotes do sistema operacional necessários
 RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
     libffi-dev \
+    python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
 # Definir o diretório de trabalho no container
