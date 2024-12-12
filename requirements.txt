@@ -1,6 +1,4 @@
-taipy
-uv
-dotenv
-crewai
-crewai[tools]
+taipy==4.0.1
+crewai==0.86.0
+crewai-tools==43.0.3
 
